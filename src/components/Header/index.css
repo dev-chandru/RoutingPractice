@@ -1,0 +1,58 @@
+/* Write your CSS code here */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.menu-container {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.wave-logo {
+  width: 25px;
+  margin-right: 5px;
+}
+.logo-name {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  color: #12022f;
+}
+.menu-item {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  color: #12022f;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    flex-grow: 1;
+  }
+  .menu-container {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  .menu-item {
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .logo-name {
+    font-size: 20px;
+  }
+  .wave-logo {
+    width: 35px;
+  }
+}
